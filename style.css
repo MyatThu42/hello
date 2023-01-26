@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,300&family=Kanit:wght@700&family=Playfair+Display:ital@1&display=swap');
+*{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-var{
+    /* border: 1px solid black; */
+    display: flex;
+    /* padding: 10px; */
+    align-items: center;
+    /* justify-content:space-between; */
+
+}
+
+.logo{
+    /* border: 1px solid black; */
+    /* flex-grow: 1; */
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav{
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-left: 20px;
+
+    
+}
+
+.nav-link{
+    /* border: 1px solid black; */
+    text-align: center;
+    /* flex-grow: 1; */
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Exo 2', sans-serif;
+    padding: 5px;
+
+
+}
+
+.nav-toggler{
+    /* border: 1px solid black; */
+    padding: 10px;
+    align-self: stretch;
+    font-size: 20px;
+    display: none;
+
+}
+
+.active:hover{
+    background-color: black;
+    color: white;
+}
+.nav-link:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width:780px) {
+    .nav{
+        display: none;
+    }
+    
+    .nav-toggler{
+        display: block;
+    }
+
+}
